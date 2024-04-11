@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import styles from "./app.module.css";
+import Navbar from "./components/navbar/Navbar";
+import MobileToggle from "./components/toggler/MobileToggle";
+import Profile from "./components/profile/Profile";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    // const menu = document.querySelector(".menuLinks");
+    // const icon = document.querySelector(".hamburgerIcon");
+
+    // menu.classList.toggle('open');
+    // icon.classList.toggle('open');
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <MobileToggle isOpen={isOpen} toggleOpen={toggleMenu} />
+      <Profile/>
     </div>
   );
 }
