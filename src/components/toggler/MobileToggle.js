@@ -5,12 +5,10 @@ const MobileToggle = ({ isOpen, toggleOpen }) => {
   return (
     <>
       <nav id={styles.hamburgerNav}>
-        <div className={styles.logo}>Mule</div>
+        <div className={styles.logo}>Time to Code</div>
         <div className={styles.hamburgerMenu}>
           <div
-            className={
-              styles.hamburgerIcon + " " + (isOpen ? styles.open : "")
-            }
+            className={styles.hamburgerIcon + " " + (isOpen ? styles.open : "")}
             onClick={toggleOpen}
           >
             <span></span>
@@ -18,9 +16,7 @@ const MobileToggle = ({ isOpen, toggleOpen }) => {
             <span></span>
           </div>
           <div
-            className={
-              styles.menuLinks + " " + (isOpen ? styles.open : "")
-            }
+            className={styles.menuLinks + " " + (isOpen ? styles.open : "")}
             onClick={toggleOpen}
           >
             <li>

@@ -1,21 +1,28 @@
-#experience {
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+#experiance {
     position: relative;
 }
 
-.experience-sub-title {
+.experienceSubTitle {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.experienceDetailsContainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.article-container {
+.articleContainer {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
@@ -33,4 +40,103 @@ article {
 
 article .icon {
     cursor: default;
+}
+.aboutContainers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.detailsContainer {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+.aboutContainers,
+.aboutDetailsContainer {
+    display: flex;
+}
+.sectionTextP1 {
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/*media query*/
+
+@media screen and (max-width: 1400px) {
+    .aboutContainers {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    #experience,
+    .experienceDetailsContainer {
+        margin-top: 2rem;
+    }
+    .sectionContainer {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section,
+    .sectionContainer {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .aboutContainers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    article {
+        font-size: 1rem;
+    }
+    .aboutContainers {
+        flex-wrap: wrap;
+    }
+
+    .experienceSubTitle {
+        font-size: 1.25rem;
+    }
+
+    .sectionTextP2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .textContainer {
+        text-align: justify;
+    }
 }

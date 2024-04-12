@@ -8,7 +8,7 @@ section{
 #profile{
     display: flex;
     height: 80vh;
-    gap: 5rem;
+    gap: 10rem;
     justify-content: center;
 }
 .sectionPicContainer{
@@ -98,4 +98,77 @@ section{
 
 .btnContainer {
     gap: 1rem;
+}
+
+
+/*media query*/
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .aboutContainers {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    #profile,
+    .sectionContainer {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section,
+    .sectionContainer {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .sectionPicContainer {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .aboutContainers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    .btnContainer {
+        flex-wrap: wrap;
+    }
+
+    .sectionPicContainer {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .sectionTextP2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
 }

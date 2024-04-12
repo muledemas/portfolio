@@ -5,7 +5,7 @@ const Navbar = (props) => {
   return (
     <>
       <nav id={styles.desktopNav}>
-        <div className={styles.logo}>logo</div>
+        <div className={styles.logo}>Time to Code</div>
         <div>
           <ul className={styles.navLinks}>
             <li>

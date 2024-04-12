@@ -1,24 +1,31 @@
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
 #about {
     position: relative;
 }
 
-.about-containers {
+.aboutContainers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.about-details-container {
+.aboutDetailsContainer {
     justify-content: center;
     flex-direction: column;
 }
 
-.about-containers,
-.about-details-container {
+.aboutContainers,
+.aboutDetailsContainer {
     display: flex;
 }
 
-.about-pic {
+.aboutPic {
     border-radius: 2rem;
 }
 
@@ -28,7 +35,7 @@
     bottom: 2.5rem;
 }
 
-.details-container {
+.detailsContainer {
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -38,13 +45,122 @@
     text-align: center;
 }
 
-.section-container {
+.sectionContainer {
     gap: 4rem;
     height: 80%;
 }
 
-.section__pic-container {
+.sectionPicContainer {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+.sectionText {
+    align-self: center;
+    text-align: center;
+}
+
+.sectionTextP {
+    font-weight: 600;
+}
+
+.sectionTextP1 {
+    text-align: center;
+}
+
+.sectionTextP2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.sectionPicContainer {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+.sectionContainer {
+    display: flex;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/*media query*/
+
+@media screen and (max-width: 1400px) {
+    .aboutContainers {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .sectionContainer {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section,
+    .sectionContainer {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .sectionPicContainer {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .aboutContainers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    article {
+        font-size: 1rem;
+    }
+
+
+    .aboutContainers,
+    .contactInfoUpperContainer,
+    .btnContainer {
+        flex-wrap: wrap;
+    }
+
+    .experienceSubTitle {
+        font-size: 1.25rem;
+    }
+
+    .sectionPicContainer {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .sectionTextP2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .textContainer {
+        text-align: justify;
+    }
 }

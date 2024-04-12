@@ -1,3 +1,10 @@
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
 #contact {
     display: flex;
     justify-content: center;
@@ -5,7 +12,7 @@
     height: 70vh;
 }
 
-.contact-info-upper-container {
+.contactInfoUpperContainer {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -16,7 +23,7 @@
     padding: 0.5rem;
 }
 
-.contact-info-container {
+.contactInfoContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,14 +31,81 @@
     margin: 1rem;
 }
 
-.contact-info-container p {
+.contactInfoContainer p {
     font-size: larger;
 }
 
-.contact-icon {
+.contactIcon {
     cursor: default;
 }
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
 
-.email-icon {
+.emailIcon {
     height: 2.5rem;
+}
+
+.sectionTextP1 {
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*media query*/
+
+@media screen and (max-width: 1400px) {
+
+    #contact {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    section,
+    .sectionContainer {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #contact {
+        height: 40vh;
+    }
+
+
+    .contactInfoUpperContainer {
+        flex-wrap: wrap;
+    }
+
+    .contactInfoContainer {
+        margin: 0;
+    }
+
+    .contactInfoContainer p{
+        font-size: 1rem;
+    }
+
+    .sectionTextP2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .textContainer {
+        text-align: justify;
+    }
 }
