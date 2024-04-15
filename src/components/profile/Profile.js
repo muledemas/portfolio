@@ -3,7 +3,7 @@ import styles from './profile.module.css';
 
 const Profile = ()=>{
     return (
-      <section id={styles.profile}>
+      <section id={styles.profile} name="profile">
         <div className={styles.sectionText}>
           <p className={styles.sectionTextP1}>Hello, I'm</p>
           <h1 className={styles.title}>Muluken Demas</h1>

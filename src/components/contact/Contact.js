@@ -1,9 +1,9 @@
 import { Component } from "react";
 import styles from './contact.module.css'
 
-const Contact=()=>{
+const Contact=(props)=>{
     return (
-      <section id={styles.contact}>
+      <section id={styles.contact} name="contact" ref={props.refs}>
         <p className={styles.sectionTextP1}>Get in Touch</p>
         <h1 className={styles.title}>Contact Me</h1>
         <div

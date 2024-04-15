@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useRef , useState } from "react";
 import styles from "./app.module.css";
 import Navbar from "./components/navbar/Navbar";
 import MobileToggle from "./components/toggler/MobileToggle";
@@ -13,6 +13,13 @@ import Footer from "./components/footer/footer";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+   const sectionRef = useRef(null);
+
+   const handleClick = () => {
+     if (sectionRef.current) {
+       sectionRef.current.scrollIntoView({ behavior: "smooth" });
+     }
+   };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -27,10 +34,10 @@ function App() {
       <Navbar />
       <MobileToggle isOpen={isOpen} toggleOpen={toggleMenu} />
       <Profile />
-      <About />
-      <Experiance />
-      <Projects />
-      <Contact />
+      <About scrollToSection={handleClick} />
+      <Experiance scrollToSection={handleClick} refs={sectionRef} />
+      <Projects scrollToSection={handleClick} refs={sectionRef} />
+      <Contact refs={sectionRef} />
       <Footer />
     </>
   );

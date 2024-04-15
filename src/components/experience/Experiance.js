@@ -1,9 +1,9 @@
 import { Component } from "react";
 import styles from './experience.module.css'
 
-const Experiance=()=>{
+const Experiance=(props)=>{
     return (
-      <section id={styles.experiance}>
+      <section id={styles.experiance} name="experience" ref={props.refs}>
         <p className={styles.sectionTextP1}>Explore My</p>
         <h1 className={styles.title}>Skills</h1>
         <div className={styles.experienceDetailsContainer}>
@@ -158,7 +158,8 @@ const Experiance=()=>{
         <img
           src="./assets/images/arrow.png"
           alt="Arrow icon"
-          className={styles.icon + " " + styles.arrow}
+          className={styles.arrow}
+          onClick={props.scrollToSection}
         />
       </section>
     );

@@ -71,9 +71,17 @@ article .icon {
     text-align: center;
 }
 .arrow {
+    cursor: pointer;
+    width: 2.4rem;
+    height: auto;
+    object-fit: contain;
+    align-items: center;
+    background:  #2a2252;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 3rem;
 }
 /* ICONS */
 

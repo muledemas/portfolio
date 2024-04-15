@@ -1,13 +1,11 @@
 import { Component } from "react";
 import styles from './projects.module.css'
 
-const Projects=()=>{
+const Projects=(props)=>{
     return (
-      <section id={styles.projects}>
+      <section id={styles.projects} name="projects" ref={props.refs}>
         <p className={styles.sectionTextP1}>Browse My Recent</p>
-        <h1 className={styles.title}>
-          Projects
-        </h1>
+        <h1 className={styles.title}>Projects</h1>
         <div className={styles.experienceDetailsContainer}>
           <div className={styles.aboutContainers}>
             <div
@@ -142,6 +140,7 @@ const Projects=()=>{
           src="./assets/images/arrow.png"
           alt="Arrow icon"
           className={styles.arrow}
+          onClick={props.scrollToSection}
         />
       </section>
     );
