@@ -33,13 +33,13 @@ const About=()=>{
             </div>
             <div className={styles.textContainer}>
               <p>
-                Experienced and detail-oriented Software Engineer with over 6
-                years of hands-on experience in designing, developing, and
-                maintaining software applications. Proficient in various
-                programming languages and technologies, with a strong background
-                in computer science concepts. Adept at collaborating with
-                cross-functional teams to deliver high-quality and scalable
-                solutions.
+                Dedicated and results-driven Frontend Software Engineer with
+                over 6 years of experience specializing in Angular, React,
+                JavaScript, HTML, and CSS. Skilled in translating design
+                concepts into responsive and interactive user interfaces. Proven
+                track record of delivering high-quality software solutions
+                within agile environments. Adept at collaborating with
+                cross-functional teams to drive project success.
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ const About=()=>{
         <img
           src="./assets/images/arrow.png"
           alt="Arrow icon"
-          className={styles.icon + " " + styles.arrow}
+          className={styles.arrow}
         />
       </section>
     );

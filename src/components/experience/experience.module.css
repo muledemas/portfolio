@@ -10,7 +10,7 @@ section {
 }
 
 .experienceSubTitle {
-    color: rgb(85, 85, 85);
+    color: rgb(222, 222, 222);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -45,15 +45,19 @@ article .icon {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    
 }
 .detailsContainer {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: rgb(22, 17, 47,0.398);
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: 1.5px solid #6751b9;
+    backdrop-filter: blur(1rem);
     text-align: center;
+}
+.detailsContainer:hover{
+    background: linear-gradient(180deg,#aa94fe 0%,#7c5fe6 100%);
 }
 .aboutContainers,
 .aboutDetailsContainer {

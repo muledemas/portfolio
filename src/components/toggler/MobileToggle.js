@@ -23,7 +23,7 @@ const MobileToggle = ({ isOpen, toggleOpen }) => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#experiance">Experiance</a>
+              <a href="#experiance">Skills</a>
             </li>
             <li>
               <a href="#projects">Projects</a>

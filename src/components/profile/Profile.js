@@ -10,7 +10,7 @@ const Profile = ()=>{
           <p className={styles.sectionTextP2}>Frontend Developer</p>
           <div className={styles.btnContainer}>
             <button className={styles.btn + " " + styles.btnColor2}>
-              Download CV
+            Resume
             </button>
             <button className={styles.btn + " " + styles.btnColor1}>
               Contact Info

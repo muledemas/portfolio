@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(50px);
 }
 nav,
 .navLinks {
@@ -11,7 +15,7 @@ nav,
 nav {
   align-items: center;
   justify-content: space-between;
-  height: 18vh;
+  height: 16vh;
 }
 .navLinks {
   gap: 2rem;
@@ -21,14 +25,14 @@ nav {
 
 a {
   text-decoration: none;
-  color: black;
-  text-decoration-color: white;
+  color: white;
+  text-decoration-color: rgb(227, 185, 72);
 }
 a:hover {
   text-decoration: underline;
-  color: gray;
+  color:rgb(227, 185, 72);
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(227, 185, 72);
 }
 .logo {
   font-size: 2rem;

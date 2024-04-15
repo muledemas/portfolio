@@ -11,6 +11,17 @@ section{
     gap: 10rem;
     justify-content: center;
 }
+#profile::after,#profile::before{
+    content: " ";
+    width: 28rem;
+    height: 28rem;
+    border-radius: 28rem;
+    background: #7c66e3;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+
+}
 .sectionPicContainer{
  display: flex;
  width: 300px;
@@ -28,11 +39,13 @@ section{
 
 .sectionTextP1 {
     text-align: center;
+    color: rgb(200,200,200);
 }
 
 .sectionTextP2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+     color: rgb(200,200,200);
 }
 
 .title {
@@ -50,6 +63,9 @@ section{
 .icon {
     cursor: pointer;
     height: 2rem;
+    background: #2a2252;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
 }
 
 /* BUTTONS */
@@ -70,30 +86,15 @@ section{
 
 .btnColor1,
 .btnColor2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    color: white;
+    background: rgb(22, 17, 47,0.398);
+    border: 1px solid #6751b9;
 }
 
 .btnColor1:hover,
 .btnColor2:hover {
     cursor: pointer;
-}
-
-.btnColor1,
-.btnColor2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
-}
-
-.btnColor1:hover {
-    background: rgb(0, 0, 0);
-}
-
-.btnColor2 {
-    background: none;
-}
-
-.btnColor2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    background: linear-gradient(180deg,#aa94fe 0%,#7c5fe6 100%);
 }
 
 .btnContainer {

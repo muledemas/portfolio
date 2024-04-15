@@ -141,7 +141,7 @@ const Projects=()=>{
         <img
           src="./assets/images/arrow.png"
           alt="Arrow icon"
-          className={styles.icon + " " + styles.arrow}
+          className={styles.arrow}
         />
       </section>
     );

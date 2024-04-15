@@ -5,7 +5,7 @@ const Experiance=()=>{
     return (
       <section id={styles.experiance}>
         <p className={styles.sectionTextP1}>Explore My</p>
-        <h1 className={styles.title}>Experience</h1>
+        <h1 className={styles.title}>Skills</h1>
         <div className={styles.experienceDetailsContainer}>
           <div className={styles.aboutContainers}>
             <div className={styles.detailsContainer}>
@@ -32,7 +32,7 @@ const Experiance=()=>{
                   />
                   <div>
                     <h3>CSS</h3>
-                    <p>Experienced</p>
+                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -42,8 +42,8 @@ const Experiance=()=>{
                     className={styles.icon}
                   />
                   <div>
-                    <h3>SASS</h3>
-                    <p>Intermediate</p>
+                    <h3>Angular</h3>
+                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
@@ -64,7 +64,7 @@ const Experiance=()=>{
                     className={styles.icon}
                   />
                   <div>
-                    <h3>TypeScript</h3>
+                    <h3>React</h3>
                     <p>Experienced</p>
                   </div>
                 </article>
@@ -82,9 +82,7 @@ const Experiance=()=>{
               </div>
             </div>
             <div className={styles.detailsContainer}>
-              <h2 className={styles.experienceSubTitle}>
-                Frontend Development
-              </h2>
+              <h2 className={styles.experienceSubTitle}>Tools</h2>
               <div className={styles.articleContainer}>
                 <article>
                   <img
@@ -93,7 +91,7 @@ const Experiance=()=>{
                     className={styles.icon}
                   />
                   <div>
-                    <h3>PostgreSQL</h3>
+                    <h3>Docker</h3>
                     <p>Basic</p>
                   </div>
                 </article>
@@ -104,10 +102,11 @@ const Experiance=()=>{
                     className={styles.icon}
                   />
                   <div>
-                    <h3>Node JS</h3>
+                    <h3>Figma</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>
+
                 <article>
                   <img
                     src="./assets/images/checkmark.png"
@@ -115,7 +114,7 @@ const Experiance=()=>{
                     className={styles.icon}
                   />
                   <div>
-                    <h3>Express JS</h3>
+                    <h3>Jira</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>
@@ -127,6 +126,28 @@ const Experiance=()=>{
                   />
                   <div>
                     <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/images/checkmark.png"
+                    alt="Experience icon"
+                    className={styles.icon}
+                  />
+                  <div>
+                    <h3>Keycloak</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/images/checkmark.png"
+                    alt="Experience icon"
+                    className={styles.icon}
+                  />
+                  <div>
+                    <h3>Camunda</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>

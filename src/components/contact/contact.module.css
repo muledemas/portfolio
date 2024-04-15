@@ -15,10 +15,10 @@ section {
 .contactInfoUpperContainer {
     display: flex;
     justify-content: center;
+    background: rgb(22, 17, 47,0.398);
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: (250, 250, 250);
+    border: 1.5px solid #6751b9;
+    backdrop-filter: blur(1rem);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -42,10 +42,13 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    background: #2a2252;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
 }
 
 .emailIcon {
-    height: 2.5rem;
+    height: 2rem;
 }
 
 .sectionTextP1 {

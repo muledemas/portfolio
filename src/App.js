@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "./app.module.css";
 import Navbar from "./components/navbar/Navbar";
 import MobileToggle from "./components/toggler/MobileToggle";
@@ -8,7 +8,8 @@ import Experiance from "./components/experience/Experiance";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/footer";
-//import { Route, BrowserRouter } from "react-router-dom";
+//import { Route, Routes, BrowserRouter, Switch } from "react-router-dom";
+//import Switch from 'react-router-dom'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ function App() {
     // icon.classList.toggle('open');
   };
   return (
-    <div>
+    <>
       <Navbar />
       <MobileToggle isOpen={isOpen} toggleOpen={toggleMenu} />
       <Profile />
@@ -31,7 +32,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 
