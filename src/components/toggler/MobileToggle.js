@@ -1,4 +1,3 @@
-import { Component } from "react";
 import styles from './mobileToggle.module.css';
 import { Link } from "react-scroll";
 
