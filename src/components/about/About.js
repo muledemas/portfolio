@@ -1,6 +1,11 @@
 import { Component } from "react";
 import styles from "./about.module.css";
 import React from "react";
+import arrow from "../../assets/images/arrow.png";
+import experience from "../../assets/images/experience.png";
+import education from "../../assets/images/education.png";
+import muler from "../../assets/images/muler4.png";
+
 
 const About = (props) => {
  
@@ -13,7 +18,7 @@ const About = (props) => {
           <div className={styles.aboutContainers}>
             <div className={styles.detailsContainer}>
               <img
-                src="./assets/images/experience.png"
+                src={experience}
                 alt="Experience icon"
                 className={styles.icon}
               />
@@ -25,7 +30,7 @@ const About = (props) => {
             </div>
             <div className={styles.detailsContainer}>
               <img
-                src="./assets/images/education.png"
+                src={education}
                 alt="Education icon"
                 className={styles.icon}
               />
@@ -47,14 +52,14 @@ const About = (props) => {
         </div>
         <div className={styles.sectionPicContainer}>
           <img
-            src="./assets/images/muler4.png"
+            src={muler}
             alt="Profile picture"
             className={styles.aboutPic}
           />
         </div>
       </div>
       <img
-        src="./assets/images/arrow.png"
+        src={arrow}
         alt="Arrow icon"
         className={styles.arrow}
         onClick={props.scrollToSection}

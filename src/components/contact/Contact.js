@@ -1,5 +1,6 @@
-import { Component } from "react";
-import styles from './contact.module.css'
+import styles from './contact.module.css';
+import linkedin from "../../assets/images/linkedin.png";
+import mail from "../../assets/images/email.png";
 
 const Contact=(props)=>{
     return (
@@ -12,7 +13,7 @@ const Contact=(props)=>{
         >
           <div className={styles.contactInfoContainer}>
             <img
-              src="./assets/images/email.png"
+              src={mail}
               alt="Email icon"
               className={
                 styles.icon + " " + styles.ontactIcon + " " + styles.emailIcon
@@ -24,7 +25,7 @@ const Contact=(props)=>{
           </div>
           <div className={styles.contactInfoContainer}>
             <img
-              src="./assets/images/linkedin.png"
+              src={linkedin}
               alt="LinkedIn icon"
               className={styles.icon + " " + styles.contactIcon}
             />

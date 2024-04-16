@@ -1,5 +1,6 @@
 import { Component } from "react";
 import styles from './mobileToggle.module.css';
+import { Link } from "react-scroll";
 
 const MobileToggle = ({ isOpen, toggleOpen }) => {
   return (
@@ -20,16 +21,32 @@ const MobileToggle = ({ isOpen, toggleOpen }) => {
             onClick={toggleOpen}
           >
             <li>
-              <a href="#about">About</a>
+              <Link to="profile" smooth={true} duration={500}>
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#experiance">Skills</a>
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
             </li>
+
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="experience" smooth={true} duration={500}>
+                Skills
+              </Link>
             </li>
+
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="projects" smooth={true} duration={500}>
+                Projects
+              </Link>
+            </li>
+
+            <li>
+              <Link to="contact" smooth={true} duration={500}>
+                Contact
+              </Link>
             </li>
           </div>
         </div>

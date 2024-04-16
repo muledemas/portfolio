@@ -1,5 +1,6 @@
-import { Component } from "react";
 import styles from "./experience.module.css";
+import arrow from "../../assets/images/arrow.png";
+import checkmark from "../../assets/images/checkmark.png";
 
 const Experiance = (props) => {
   return (
@@ -13,7 +14,7 @@ const Experiance = (props) => {
             <div className={styles.articleContainer}>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -24,7 +25,7 @@ const Experiance = (props) => {
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -35,7 +36,7 @@ const Experiance = (props) => {
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -46,7 +47,7 @@ const Experiance = (props) => {
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -57,7 +58,7 @@ const Experiance = (props) => {
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -68,7 +69,7 @@ const Experiance = (props) => {
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -84,18 +85,7 @@ const Experiance = (props) => {
             <div className={styles.articleContainer}>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
-                  alt="Experience icon"
-                  className={styles.icon}
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -107,7 +97,7 @@ const Experiance = (props) => {
 
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -118,7 +108,7 @@ const Experiance = (props) => {
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -129,7 +119,7 @@ const Experiance = (props) => {
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -140,7 +130,7 @@ const Experiance = (props) => {
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src={checkmark}
                   alt="Experience icon"
                   className={styles.icon}
                 />
@@ -149,12 +139,23 @@ const Experiance = (props) => {
                   <p>Intermediate</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src={checkmark}
+                  alt="Experience icon"
+                  className={styles.icon}
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </div>
       <img
-        src="./assets/images/arrow.png"
+        src={arrow}
         alt="Arrow icon"
         className={styles.arrow}
         onClick={props.scrollToSection}

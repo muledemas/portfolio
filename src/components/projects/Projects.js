@@ -1,149 +1,70 @@
 import { Component } from "react";
-import styles from './projects.module.css'
+import styles from "./projects.module.css";
+import arrow from '../../assets/images/arrow.png';
 
-const Projects=(props)=>{
-    return (
-      <section id={styles.projects} name="projects" ref={props.refs}>
-        <p className={styles.sectionTextP1}>Browse My Recent</p>
-        <h1 className={styles.title}>Projects</h1>
-        <div className={styles.experienceDetailsContainer}>
-          <div className={styles.aboutContainers}>
-            <div
-              className={styles.detailsContainer + " " + styles.colorContainer}
-            >
-              <div className={styles.articleContainer}>
-                <img
-                  src="./assets/images/project-1.png"
-                  alt="Project 1"
-                  className={styles.projectImg}
-                />
-              </div>
-              <h2
-                className={
-                  styles.experienceSubTitle + " " + styles.projectTitle
-                }
-              >
-                Project One
-              </h2>
-              <div className={styles.btnContainer}>
-                <button
-                  className={
-                    styles.btn +
-                    " " +
-                    styles.btnColor2 +
-                    " " +
-                    styles.projectBtn
-                  }
-                >
-                  Github
-                </button>
-                <button
-                  className={
-                    styles.btn +
-                    " " +
-                    styles.btnColor2 +
-                    " " +
-                    styles.projectBtn
-                  }
-                >
-                  Live Demo
-                </button>
-              </div>
+const Projects = (props) => {
+  return (
+    <section id={styles.projects} name="projects" ref={props.refs}>
+      <p className={styles.sectionTextP1}>My Recent</p>
+      <h1 className={styles.title}>Projects</h1>
+      <div className={styles.experienceDetailsContainer}>
+        <div className={styles.aboutContainers}>
+          <div
+            className={styles.detailsContainer + " " + styles.colorContainer}
+          >
+            <div className={styles.articleContainer}>
+              <h3>UoG Alumni Forum</h3>
+              <p>
+                A forum web application that will help the University of Gondar
+                community to interact and discuss with alumni or former students
+                and Staffs about any academic issues including questions and
+                answers. Has features like event management, forum discussion
+                panel
+              </p>
             </div>
-            <div
-              className={styles.detailsContainer + " " + styles.colorContainer}
-            >
-              <div className={styles.articleContainer}>
-                <img
-                  src="./assets/images/project-2.png"
-                  alt="Project 2"
-                  className={styles.projectImg}
-                />
-              </div>
-              <h2
-                className={
-                  styles.experienceSubTitle + " " + styles.projectTitle
-                }
-              >
-                Project Two
-              </h2>
-              <div className={styles.btnContainer}>
-                <button
-                  className={
-                    styles.btn +
-                    " " +
-                    styles.btnColor2 +
-                    " " +
-                    styles.projectBtn
-                  }
-                >
-                  Github
-                </button>
-                <button
-                  className={
-                    styles.btn +
-                    " " +
-                    styles.btnColor2 +
-                    " " +
-                    styles.projectBtn
-                  }
-                >
-                  Live Demo
-                </button>
-              </div>
+           
+          </div>
+          <div
+            className={styles.detailsContainer + " " + styles.colorContainer}
+          >
+            <div className={styles.articleContainer}>
+              <h3>Business Process Management</h3>
+              <p>
+                A platform designed to help organizations optimize their
+                business processes. It achieves this by providing features such
+                as process modeling, task management, document management, and
+                reporting. Process modeling allows businesses to visualize and
+                design their workflows in a way that makes sense for their
+                specific needs
+              </p>
             </div>
-            <div
-              className={styles.detailsContainer + " " + styles.colorContainer}
-            >
-              <div className={styles.articleContainer}>
-                <img
-                  src="./assets/images/project-3.png"
-                  alt="Project 3"
-                  className={styles.projectImg}
-                />
-              </div>
-              <h2
-                className={
-                  styles.experienceSubTitle + " " + styles.projectTitle
-                }
-              >
-                Project Three
-              </h2>
-              <div className={styles.btnContainer}>
-                <button
-                  className={
-                    styles.btn +
-                    " " +
-                    styles.btnColor2 +
-                    " " +
-                    styles.projectBtn
-                  }
-                >
-                  Github
-                </button>
-                <button
-                  className={
-                    styles.btn +
-                    " " +
-                    styles.btnColor2 +
-                    " " +
-                    styles.projectBtn
-                  }
-                >
-                  Live Demo
-                </button>
-              </div>
+           
+          </div>
+          <div
+            className={styles.detailsContainer + " " + styles.colorContainer}
+          >
+            <div className={styles.articleContainer}>
+              <h3>Thesis Management System</h3>
+              <p>
+                The project thesis process management system was designed to
+                help students and faculty manage the process of completing a
+                thesis project. The system included features for tracking the
+                progress of the project, managing deadlines and milestones, and
+                facilitating communication between students and faculty members.
+              </p>
             </div>
+           
           </div>
         </div>
-        <img
-          src="./assets/images/arrow.png"
-          alt="Arrow icon"
-          className={styles.arrow}
-          onClick={props.scrollToSection}
-        />
-      </section>
-    );
-}
+      </div>
+      <img
+        src={arrow}
+        alt="Arrow icon"
+        className={styles.arrow}
+        onClick={props.scrollToSection}
+      />
+    </section>
+  );
+};
 
-export default Projects
+export default Projects;

@@ -1,5 +1,9 @@
 import { Component } from "react";
 import styles from './profile.module.css';
+import mule from '../../assets/images/muler1.png';
+import linkedin from "../../assets/images/linkedin.png";
+import gitimg from "../../assets/images/github.png";
+
 
 const Profile = ()=>{
    const downloadFile = () => {
@@ -33,19 +37,19 @@ const Profile = ()=>{
           </div>
           <div id={styles.socialsContainer}>
             <img
-              src="./assets/images/linkedin.png"
+              src={linkedin}
               alt="My LinkedIn profile"
               className={styles.icon}
             />
             <img
-              src="./assets/images/github.png"
+              src={gitimg}
               alt="My Github profile"
               className={styles.icon}
             />
           </div>
         </div>
         <div className={styles.sectionPicContainer}>
-          <img src="./assets/images/muler1.png" alt="Muluken profile picture" />
+          <img src={mule} alt="Muluken profile picture" />
         </div>
       </section>
     );
