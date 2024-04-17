@@ -4,7 +4,7 @@ import React from "react";
 import arrow from "../../assets/images/arrow.png";
 import experience from "../../assets/images/experience.png";
 import education from "../../assets/images/education.png";
-import muler from "../../assets/images/muler4.png";
+import muler from "../../assets/images/muler_bg.jpg";
 
 
 const About = (props) => {

@@ -13,6 +13,26 @@ const Projects = (props) => {
             className={styles.detailsContainer + " " + styles.colorContainer}
           >
             <div className={styles.articleContainer}>
+              <h3>Business Process Management</h3>
+              <p>
+                A platform designed to help organizations optimize their
+                business processes. It achieves this by providing features such
+                as process modeling, task management, document management, and
+                reporting. Process modeling allows businesses to visualize and
+                design their workflows in a way that makes sense for their
+                specific needs.
+              </p>
+              <p>
+                <strong>Programming Tools and Platforms Used:</strong> Visual
+                Studio,Asp.net core, PostgreSQL, Keycloak, Camunda, Docker,
+                Kong, Konga, Azure Devops, Windows 10
+              </p>
+            </div>
+          </div>
+          <div
+            className={styles.detailsContainer + " " + styles.colorContainer}
+          >
+            <div className={styles.articleContainer}>
               <h3>UoG Alumni Forum</h3>
               <p>
                 A forum web application that will help the University of Gondar
@@ -21,25 +41,14 @@ const Projects = (props) => {
                 answers. Has features like event management, forum discussion
                 panel
               </p>
-            </div>
-           
-          </div>
-          <div
-            className={styles.detailsContainer + " " + styles.colorContainer}
-          >
-            <div className={styles.articleContainer}>
-              <h3>Business Process Management</h3>
               <p>
-                A platform designed to help organizations optimize their
-                business processes. It achieves this by providing features such
-                as process modeling, task management, document management, and
-                reporting. Process modeling allows businesses to visualize and
-                design their workflows in a way that makes sense for their
-                specific needs
+                <strong>Programming Tools and Platforms Used:</strong> Asp.net
+                core,Angular, Visual Studio ,MaterialUi, EF, SQL-Server, Windows
+                10
               </p>
             </div>
-           
           </div>
+
           <div
             className={styles.detailsContainer + " " + styles.colorContainer}
           >
@@ -52,8 +61,12 @@ const Projects = (props) => {
                 progress of the project, managing deadlines and milestones, and
                 facilitating communication between students and faculty members.
               </p>
+              <p>
+                <strong>Programming Tools and Platforms Used:</strong>Asp.net
+                core, React, Visual Studio ,bootstrap, EF, SQL-Server, Windows
+                10
+              </p>
             </div>
-           
           </div>
         </div>
       </div>

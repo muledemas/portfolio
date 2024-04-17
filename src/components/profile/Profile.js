@@ -1,6 +1,6 @@
 import { Component } from "react";
 import styles from './profile.module.css';
-import mule from '../../assets/images/muler1.png';
+import mule from '../../assets/images/muleimg.png';
 import linkedin from "../../assets/images/linkedin.png";
 import gitimg from "../../assets/images/github.png";
 
